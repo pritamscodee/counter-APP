@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .counter-container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .count-display {
+            font-size: 48px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 15px 25px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 80px;
+        }
+
+        .inc {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .inc:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+        }
+
+        .dec {
+            background: #f44336;
+            color: white;
+        }
+
+        .dec:hover {
+            background: #da190b;
+            transform: translateY(-2px);
+        }
+
+        .countbtn {
+            background: #2196F3;
+            color: white;
+        }
+
+        .countbtn:hover {
+            background: #0b7dda;
+            transform: translateY(-2px);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+#random{
+    background-color:#da190b;
+}
+#random:hover{
+    
+    border:2px solid red;
+    background-color: transparent;
+}
+
+    </style>
+</head>
+<body>
+    <div class="counter-container">
+        <div class="count-display">0</div>
+        <div class="buttons">
+            <button ID ="btn-inc" class="btn inc">+</button>
+            <button ID ="btn-dec" class="btn dec">-</button>
+           <button id="random" class="btn">random </button>
+            <button ID ="reset" class="btn countbtn">Reset</button>
+        </div>
+    </div>
+</body>
+
+<script src="bb.js" ></script>
+</html>
